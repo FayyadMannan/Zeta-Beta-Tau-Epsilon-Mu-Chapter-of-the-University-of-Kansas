@@ -1,335 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zeta Beta Tau | Epsilon Mu Chapter</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-
-body{
-font-family:'Poppins',sans-serif;
-background:white;
-color:#1a1a1a;
-}
-
-/* NAVBAR */
-nav{
-position:fixed;
-top:0;
-width:100%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:16px 40px;
-background:white;
-border-bottom:2px solid #e6c200;
-z-index:1000;
-flex-wrap:wrap;
-}
-
-.logo-area{
-display:flex;
-align-items:center;
-gap:15px;
-}
-
-.logo-area img{
-height:60px;
-}
-
-.logo-title{
-font-weight:600;
-font-size:18px;
-color:#2a6fdb;
-}
-
-nav a{
-color:#2a6fdb;
-text-decoration:none;
-margin-left:25px;
-font-weight:500;
-}
-
-nav a:hover{
-color:#e6c200;
-}
-
-/* HERO */
-.hero{
-margin-top:90px;
-height:85vh;
-background:url('zbt-house.jpg') center/cover no-repeat;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-position:relative;
-}
-
-.hero::after{
-content:"";
-position:absolute;
-inset:0;
-background:rgba(255,255,255,0.35);
-}
-
-.hero-content{
-position:relative;
-max-width:800px;
-}
-
-.hero h2{
-font-size:60px;
-color:#2a6fdb;
-}
-
-.hero p{
-font-size:20px;
-margin-top:10px;
-}
-
-.button{
-display:inline-block;
-margin-top:25px;
-padding:14px 28px;
-background:#e6c200;
-color:black;
-text-decoration:none;
-font-weight:600;
-border-radius:6px;
-}
-
-/* SECTIONS */
-section{
-padding:90px 10%;
-max-width:1300px;
-margin:auto;
-}
-
-.section-title{
-font-size:36px;
-margin-bottom:35px;
-color:#2a6fdb;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
-}
-
-.card{
-background:#f8fbff;
-padding:30px;
-border-radius:10px;
-border:1px solid #e6c200;
-}
-
-.video{
-position:relative;
-padding-bottom:56.25%;
-height:0;
-overflow:hidden;
-border-radius:10px;
-}
-
-.video iframe{
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-}
-
-/* EXEC BOARD */
-.board{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:25px;
-}
-
-.member{
-background:#f8fbff;
-padding:20px;
-border-radius:10px;
-border:1px solid #e6c200;
-text-align:center;
-}
-
-.member img{
-width:100%;
-border-radius:8px;
-margin-bottom:10px;
-}
-
-/* FOOTER */
-footer{
-background:#2a6fdb;
-color:white;
-text-align:center;
-padding:35px;
-margin-top:80px;
-}
-
-/* MOBILE */
-@media(max-width:800px){
-
-nav{
-flex-direction:column;
-align-items:flex-start;
-}
-
-nav div{
-margin-top:10px;
-display:flex;
-flex-wrap:wrap;
-}
-
-.hero h2{
-font-size:40px;
-}
-
-.logo-title{
-font-size:16px;
-}
-
-}
-
-</style>
+<title>ZBT KU</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <nav>
 
-<div class="logo-area">
-<img src="zbt-crest.png" alt="ZBT Crest">
-<div class="logo-title">Zeta Beta Tau Epsilon Mu Chapter of University of Kansas</div>
+<div class="logo">
+<img src="zbt-crest.png">
+<b>Zeta Beta Tau Epsilon Mu Chapter of University of Kansas</b>
 </div>
 
 <div>
-<a href="#home">Home</a>
-<a href="#house">House Tour</a>
-<a href="#news">News</a>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSfQKauoorJ7LjYBoZFm_35kQO2rz7HjiVbAgSNWJ54P1QA1pA/viewform" target="_blank">Recruitment</a>
-<a href="#board">Exec Board</a>
-<a href="#alumni">Alumni</a>
-<a href="#donate">Donate</a>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSfQKauoorJ7LjYBoZFm_35kQO2rz7HjiVbAgSNWJ54P1QA1pA/viewform" target="_blank">Contact</a>
+<a href="index.html">Home</a>
+<a href="house-tour.html">House Tour</a>
+<a href="news.html">News</a>
+<a href="recruitment.html">Recruitment</a>
+<a href="exec.html">Exec Board</a>
+<a href="alumni.html">Alumni</a>
+<a href="donate.html">Donate</a>
+<a href="contact.html">Contact</a>
 </div>
 
 </nav>
 
-<section class="hero" id="home">
-
-<div class="hero-content">
-<h2>Zeta Beta Tau</h2>
-<p>Epsilon Mu Chapter — University of Kansas</p>
-<p>Intellectual Awareness • Social Responsibility • Integrity • Brotherly Love</p>
-<a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSfQKauoorJ7LjYBoZFm_35kQO2rz7HjiVbAgSNWJ54P1QA1pA/viewform" target="_blank">Rush ZBT</a>
+<div class="hero">
+<h1>Zeta Beta Tau</h1>
 </div>
-
-</section>
-
-<section id="house">
-<h2 class="section-title">House Tour</h2>
-
-<div style="display:flex;justify-content:center;">
-<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DPXTUjyiYNs/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF;border:0;border-radius:6px;box-shadow:0 4px 15px rgba(0,0,0,0.15);max-width:540px;width:100%;"></blockquote>
-</div>
-
-<script async src="https://www.instagram.com/embed.js"></script>
-
-</section>
-
-<section id="news">
-<h2 class="section-title">News & Events</h2>
-<div class="grid">
-<div class="card"><h3>Philanthropy Week</h3><p>Our biggest fundraiser supporting community initiatives.</p></div>
-<div class="card"><h3>Brotherhood Retreat</h3><p>Annual retreat focused on leadership and brotherhood.</p></div>
-<div class="card"><h3>Formal</h3><p>Annual formal celebrating the chapter and brotherhood.</p></div>
-</div>
-</section>
-
-<section id="recruitment">
-<h2 class="section-title">Recruitment</h2>
-<div class="grid">
-<div class="card">
-<h3>Why Join ZBT?</h3>
-<p>Join a brotherhood dedicated to leadership, philanthropy, and lifelong friendships.</p>
-<a class="button" href="#contact">Register for Rush (Interest Form)</a>
-</div>
-
-<div class="card">
-<h3>Professional Network</h3>
-<p>Connect with alumni across industries and gain mentorship opportunities.</p>
-</div>
-
-<div class="card">
-<h3>Leadership Development</h3>
-<p>Members gain leadership experience through executive roles and events.</p>
-</div>
-</div>
-</section>
-
-<section id="board">
-<h2 class="section-title">Executive Board</h2>
-<div class="board">
-<div class="member"><img src="reid-stevens.png" alt="Reid Stevens"><h4>President</h4><p>Reid Stevens</p></div>
-<div class="member"><img src="cullen-parker.png" alt="Cullen Parker"><h4>Vice President</h4><p>Cullen Parker</p></div>
-<div class="member"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e"><h4>Treasurer</h4><p>Charlie Hoodenpyle</p></div>
-<div class="member"><img src="mason-warner.png" alt="Mason Warner"><h4>Recruitment Director</h4><p>Mason Warner</p></div>
-<div class="member"><img src="harper-bogitch.png" alt="Harper Bogitch"><h4>Recruitment Director</h4><p>Harper Bogitch</p></div>
-<div class="member"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e"><h4>Recruitment Director</h4><p>Eli Greenfield</p></div>
-<div class="member"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e"><h4>Risk Manager</h4><p>Jordan Kane</p></div>
-<div class="member"><img src="jake-pulsa.png" alt="Jake Pulsa"><h4>Communications Director</h4><p>Jake Pulsa</p></div>
-<div class="member"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e"><h4>Social Chair</h4><p>Patrick Martin</p></div>
-<div class="member"><img src="nate-latus.png" alt="Nate Latus"><h4>Standards Director</h4><p>Nate Latus</p></div>
-<div class="member"><img src="ben-lazarus.png" alt="Ben Lazarus"><h4>Brotherhood Development</h4><p>Ben Lazarus</p></div>
-<div class="member"><img src="payton-picus.png" alt="Payton Picus"><h4>Programming Director</h4><p>Payton Picus</p></div>
-</div>
-</section>
-
-<section id="alumni">
-<h2 class="section-title">Alumni</h2>
-<div class="card">
-<p>The ZBT Epsilon Mu alumni network provides mentorship, career connections, and lifelong brotherhood beyond college.</p>
-<a class="button" href="https://forms.gle/sDeLSxeSZUEbsjpy5" target="_blank">Alumni Contact Form</a>
-</div>
-</section>
-
-<section id="donate">
-<h2 class="section-title">Support the Chapter</h2>
-<div class="card">
-<p>Donations support scholarships, philanthropy events, and improvements to the chapter house.</p>
-<a class="button" href="#">Donate</a>
-</div>
-</section>
-
-<section id="instagram">
-<h2 class="section-title">Instagram</h2>
-<div class="card" style="text-align:center">
-<p>Follow the chapter to see events, brotherhood moments, and updates.</p>
-<a class="button" href="https://www.instagram.com/zbtku?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Visit @zbtku on Instagram</a>
-</div>
-</section>
-
-<section id="contact">
-<h2 class="section-title">Contact</h2>
-<div class="card">
-<p>Email: epsilonmu.zbt@gmail.com</p>
-<p>LinkedIn: <a href="https://www.linkedin.com/groups/12469282/" target="_blank">ZBT Epsilon Mu LinkedIn Group</a></p>
-<p>Instagram: <a href="https://www.instagram.com/zbtku?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">@zbtku</a></p>
-</div>
-</section>
 
 <footer>
-<p>© 2026 Zeta Beta Tau — Epsilon Mu Chapter</p>
+© 2026 Zeta Beta Tau — Epsilon Mu Chapter
 </footer>
 
 </body>
 </html>
-
